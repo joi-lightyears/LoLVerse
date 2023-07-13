@@ -390,64 +390,49 @@ header{
     width: 100%;
     margin-top: 0.625rem;
     text-align: center;
-    & .exploreBtn{
+    & .loginBtn{
         position: relative;
         display: inline-block;
-        min-width: 195px;
+        min-width: 180px;
         height: 56px;
         padding: 0px;
         margin: 5px;
-        color: rgb(1, 1, 1);
-        font-size: 0.8125rem;
-        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        
+
+
+        font-size: 15px;
         font-weight: bold;
-        background-color: transparent;
-        border: 0px;
-        & .innerBtn{
-            background-color: rgb(11, 198, 227);;
-            opacity: 0.9;
-            position: relative;
-            display: flex;
-            -webkit-box-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            justify-content: center;
-            min-width: 195px;
-            height: 56px;
-            padding: 0px 40px;
-            & .label{
-                text-transform: uppercase;
-            }
-            & .revealBtn{
-                position: absolute;
-                left: 0px;
-                top: 0px;
-                width: 100%;
-                height: 100%;
-
-                border: #0bc4e2;
-                
-                animation-duration: 1000ms;
-                animation-delay: 1400ms;
-                animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-
-            }
+        letter-spacing: 1px;
+        padding: 5px 15px; 
+        background: #1e2328;
+        color: #cdbe91;
+        box-shadow: inset 0 0 2px #000000;
+        border-image: linear-gradient(to bottom, #c8aa6d, #7a5c29);
+        border-image-slice: 1;
+        border-width: 2px;
+        &:hover{
+            text-shadow: 0 0 5px #ffffff80;
+            box-shadow: 0 0 8px 0 #ffffff50;
+            background: linear-gradient(to bottom, #1e2328, #433d2b);
+            cursor: pointer;
+            transition: 0.1s;
         }
-        &:hover .revealBtn{
-            clip-path: polygon(100% 100%, -200% 100%, 100% -200%);
-            animation-name: btnEffect;
+        &:active{
+            text-shadow: none;
+            box-shadow: none;
+            color: #cdbe9130;
         }
-        &:hover .innerBtn{
-            opacity: 1;
-        }
+        
     }
+    
 }
-@keyframes btnEffect{
+/* @keyframes btnEffect{
     0%{
         clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
     }
     100%{
         clip-path: polygon(100% 100%, -200% 100%, 100% -200%);
     }
-}
+} */
 /* ------------------------------HEADER END */
