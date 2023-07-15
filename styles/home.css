@@ -871,4 +871,575 @@ header{
         border: 1px solid #32281f;
     }
 }
+.content__champRepresent__champRepresentBackground{
+    background: url(../assets/img/champRepresentBg.jpg);
+    background-position: 50%;
+    background-size: cover;
+    opacity: .2;
+    position: absolute;
+    top: -250px;
+    right: 0;
+    bottom: 70%;
+    left: 0;
+    & .gradient{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #0a0a0c;
+        background-image: -webkit-linear-gradient(top,#0a0a0c,rgba(0,0,0,0),#0a0a0c);
+        background-image: linear-gradient(180deg,#0a0a0c,rgba(0,0,0,0),#0a0a0c);
+        background-color: rgba(0,0,0,0);
+    }
+}
+.content__champRepresent{
+    clear: both;
+    padding: 13px 0 25px;
+    position: relative;
+}
+.content__champRepresent__majorHeader{
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    top: -31px;
+    & img{
+        left: calc(50% - 16px);
+        max-width: 32px;
+        max-height: 32px;
+        position: absolute;
+        top: -40px;
+    }
+    & h1{
+        color: #c4b998;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+}
+.content__champRepresent__champBanner{
+
+}
+.content__champRepresent__champBanner__Wrapper{
+    margin: 20px 0 10px;
+    position: relative;
+    & .framer{
+        position: absolute;
+        top: -140px;
+        right: 5.5%;
+        bottom: 10px;
+        left: 5.5%;
+        border-bottom: 1px solid #373121;
+        pointer-events: none;
+        z-index: 2;
+        & .topRightHorLine{
+            position: absolute;
+            top: 70px;
+            right: 0;
+            width: calc(50% - 240px);
+            background: #373121;
+            height: 1px;
+            &::before{
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                top: -2px;
+                left: -5px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border: 1px solid #373121;
+                content: "\25C7";
+                font-size: 0;
+            }
+        }
+        & .topLeftHorLine{
+            position: absolute;
+            top: 70px;
+            left: 0;
+            width: calc(50% - 240px);
+            background: #373121;
+            height: 1px;
+            &::before{
+                position: absolute;
+                top: auto;
+                right: -5px;
+                bottom: -2px;
+                left: auto;
+                height: 5px;
+                width: 5px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border: 1px solid #373121;
+                content: "\25C7";
+                font-size: 0;
+            }
+        }
+        & .topRightVerLine{
+            position: absolute;
+            top: 70px;
+            right: 0;
+            height: calc(50% - 205px);
+            background: #373121;
+            width: 1px;
+            &::before{
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                bottom: -5px;
+                left: -2px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border: 1px solid #373121;
+                content: "\25C7";
+                font-size: 0;
+            }
+        }
+        & .topLeftVerLine{
+            position: absolute;
+            top: 70px;
+            left: 0;
+            height: calc(50% - 205px);
+            background: #373121;
+            width: 1px;
+            &::before{
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                bottom: -5px;
+                left: -2px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border: 1px solid #373121;
+                content: "\25C7";
+                font-size: 0;
+            }
+        }
+        & .botRightVerLine{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: calc(50% - 165px);
+            background: #373121;
+            width: 1px;
+            &::before{
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                top: -5px;
+                left: -2px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border: 1px solid #373121;
+                content: "\25C7";
+                font-size: 0;
+            }
+        }
+        & .botLeftVerLine{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: calc(50% - 165px);
+            background: #373121;
+            width: 1px;
+            &::before{
+                height: 5px;
+                width: 5px;
+                position: absolute;
+                top: -5px;
+                left: -2px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                border: 1px solid #373121;
+                content: "\25C7";
+                font-size: 0;
+            }
+        }
+    }
+    & .featured{
+        overflow: visible;
+        overflow-x: hidden;
+        overflow-y: visible;
+        margin: 0 auto;
+        position: relative;
+        /* overflow: hidden; */
+        z-index: 1;
+        & .bannerContainer{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+            -ms-transition-property: -ms-transform;
+            transition-property: transform;
+            /* -webkit-box-sizing: content-box; */
+            /* -moz-box-sizing: content-box; */
+            /* box-sizing: content-box; */
+            & .champBanner{
+                /* margin-right: 117px; */
+                width: auto;
+                /* -webkit-flex-shrink: 0; */
+                -ms-flex: 0 0 auto;
+                flex-shrink: 0;
+                /* width: 100%; */
+                height: 100%;
+                position: relative;
+                &:hover .contentItemWrap .itemBgContainer{
+                    -webkit-transform: scale(1.02);
+                    -moz-transform: scale(1.02);
+                    -ms-transform: scale(1.02);
+                    -o-transform: scale(1.02);
+                    transform: scale(1.02);
+                }
+                & .contentItemWrap{
+                    overflow: hidden;
+                    & .itemBgContainer{
+                        background-image: url(../assets/img/rammus.jp);
+                        background-position: 64.1152% 29.1492%;
+                        opacity: 1;
+                        -webkit-animation: imageSetIn .8s;
+                        -moz-animation: imageSetIn .8s;
+                        animation: imageSetIn .8s;
+                        -webkit-transform: scale(1);
+                        -moz-transform: scale(1);
+                        -ms-transform: scale(1);
+                        -o-transform: scale(1);
+                        transform: scale(1);
+                        -webkit-transition: .3s;
+                        -moz-transition: .3s;
+                        transition: .3s;
+                        & .childrenImgBg{
+                            height: 100%;
+                            position: relative;
+                            width: 100%;
+                            & .imgBg{
+                                background-image: url(../assets/img/rammus.jpg);
+                                background-position: 64.1152% 29.1492%;
+                                opacity: 1;
+                                width: 1024.5px;
+                                min-height: 40vw;
+                                max-height: 650px;
+                                position: relative;
+
+                                /* position: absolute; */
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                background-attachment: local;
+                                background-color: #0a0a0c;
+                                background-repeat: no-repeat;
+                                /* background-size: cover; */
+                                /* transition: opacity .4s ease; */
+                            }
+                        }
+                    }
+                }
+                & .itemInfoContainer{
+                    height: 175px;
+                    width: 92%;
+                    position: relative;
+                    top: -100px;
+                    background: #131315;
+                    border: 1px solid #342b20;
+                    margin: 0 auto;
+                    padding-top: 20px;
+                    &::before, &::after{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        height: 14px;
+                        width: 1px;
+                        background: #342b20;
+                    }
+                    &::after{
+                        position: absolute;
+                        top: auto;
+                        bottom: 0;
+                        left: 24%;
+                    }
+                    & .itemInfoWrapper{
+                        position: absolute;
+                        top: 14px;
+                        right: 14px;
+                        bottom: 14px;
+                        left: 14px;
+                        border: 1px solid #342b20;
+                        &::before, &::after{
+                            position: absolute;
+                            top: 50%;
+                            left: -14px;
+                            height: 1px;
+                            width: 14px;
+                            background: #342b20;
+                            content: "";
+                            font-size: 0;
+                        }
+                        &::after{
+                            position: absolute;
+                            top: auto;
+                            right: -14px;
+                            bottom: 12px;
+                            left: auto;
+                        }
+                        & .itemInfo{
+                            position: absolute;
+                            top: 22px;
+                            right: 22px;
+                            bottom: 22px;
+                            left: 22px;
+                            border: 1px solid #c4b998;
+                            & .exploreChamp{
+                                height: 98px;
+                                width: 27%;
+                                float: left;
+                                line-height: 95px;
+                                font-weight: 500;
+                                font-size: 15px;
+                                color: #b59758;
+                                display: block;
+                                letter-spacing: 4px;
+                                text-align: center;
+                                text-transform: uppercase;
+                                &:hover .title{
+                                    color: #d3c7aa;
+                                }
+                                &:hover .title.arrorBtn.hoverArrow{
+                                    -webkit-transform: translateX(50%);
+                                    -moz-transform: translateX(50%);
+                                    -ms-transform: translateX(50%);
+                                    -o-transform: translateX(50%);
+                                    transform: translateX(50%);
+                                    -webkit-transition-delay: .22s;
+                                    -moz-transition-delay: .22s;
+                                    transition-delay: .22s;
+                                    opacity: 1;
+                                }
+                                &:hover .title.arrorBtn.restArrow{
+                                    -webkit-transform: translateX(230%);
+                                    -moz-transform: translateX(230%);
+                                    -ms-transform: translateX(230%);
+                                    -o-transform: translateX(230%);
+                                    transform: translateX(230%);
+                                    -webkit-transition-delay: 0s;
+                                    -moz-transition-delay: 0s;
+                                    transition-delay: 0s;
+                                    opacity: 0;
+                                }
+                                
+                                & .title{
+                                    
+                                    -moz-transition: .2s;
+                                    transition: .2s;
+                                    display: inline-block;
+                                    
+                                    & .arrowBtn{
+                                        width: 34px;
+                                        height: 17px;
+                                        position: relative;
+                                        display: inline-block;
+                                        cursor: pointer;
+                                        line-height: 1;
+                                        top: 2px;
+                                        & .hoverArrow, & .restArrow{
+                                            -webkit-transition: .44s;
+                                            -moz-transition: .44s;
+                                            transition: .44s;
+                                            opacity: 0;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            -webkit-transform: translateX(-130%);
+                                            -moz-transform: translateX(-130%);
+                                            -ms-transform: translateX(-130%);
+                                            -o-transform: translateX(-130%);
+                                            transform: translateX(-130%);
+                                        }
+                                        & .restArrow{
+                                            left: 0;
+                                            -webkit-transition-delay: .22s;
+                                            -moz-transition-delay: .22s;
+                                            transition-delay: .22s;
+                                            opacity: 1;
+                                            -webkit-transform: translateX(50%);
+                                            -moz-transform: translateX(50%);
+                                            -ms-transform: translateX(50%);
+                                            -o-transform: translateX(50%);
+                                            transform: translateX(50%);
+                                        }
+                                        
+                                    }
+                                    
+                                }
+                                &:hover .title .arrowBtn .hoverArrow{
+                                    -webkit-transform: translateX(50%);
+                                    -moz-transform: translateX(50%);
+                                    -ms-transform: translateX(50%);
+                                    -o-transform: translateX(50%);
+                                    transform: translateX(50%);
+                                    -webkit-transition-delay: .22s;
+                                    -moz-transition-delay: .22s;
+                                    transition-delay: .22s;
+                                    opacity: 1;
+                                }
+                                &:hover .title .arrowBtn .restArrow{
+                                    -webkit-transform: translateX(230%);
+                                    -moz-transform: translateX(230%);
+                                    -ms-transform: translateX(230%);
+                                    -o-transform: translateX(230%);
+                                    transform: translateX(230%);
+                                    -webkit-transition-delay: 0s;
+                                    -moz-transition-delay: 0s;
+                                    transition-delay: 0s;
+                                    opacity: 0;
+                                }
+                            }
+                            & .infoType{
+                                /* display: -webkit-flex;
+                                display: -moz-flex;
+                                display: -ms-flexbox; */
+                                display: flex;
+                                height: 98px;
+                                width: 13%;
+                                border-right: 1px solid #c4b998;
+                                float: left;
+                                & img{
+                                    height: auto;
+                                    margin: auto;
+                                    max-height: 70%;
+                                    width: auto;
+                                }
+                            }
+                            & .champTitle{
+                                width: 39%;
+                                font-weight: 500;
+                                font-size: 38px;
+                                height: 98px;
+                                border-right: 1px solid #c4b998;
+                                color: #d3c7aa;
+                                float: left;
+                                letter-spacing: .14em;
+                                line-height: 94px;
+                                text-align: center;
+                                text-transform: uppercase;
+                            }
+                            & .roleAndArea{
+                                height: 98px;
+                                width: 21%;
+                                border-right: 1px solid #c4b998;
+                                float: left;
+                                
+                                & li{
+                                    display: flex;
+                                    -webkit-box-pack: center;
+                                    -moz-box-pack: center;
+                                    box-pack: center;
+                                    -webkit-justify-content: center;
+                                    -moz-justify-content: center;
+                                    -ms-justify-content: center;
+                                    -o-justify-content: center;
+                                    justify-content: center;
+                                    -ms-flex-pack: center;
+                                    -webkit-box-align: center;
+                                    -moz-box-align: center;
+                                    box-align: center;
+                                    -webkit-align-items: center;
+                                    -moz-align-items: center;
+                                    -ms-align-items: center;
+                                    -o-align-items: center;
+                                    align-items: center;
+                                    -ms-flex-align: center;
+                                    color: #d3c7aa;
+                                    font-size: 11px;
+                                    height: 49px;
+                                    letter-spacing: .2em;
+                                    padding-left: 5px;
+                                    padding-right: 5px;
+                                    text-align: center;
+                                    text-transform: uppercase;
+                                    &:nth-child(1){
+                                        border-bottom: 1px solid #c4b998 ;
+                                    }
+                                    & dl{
+                                        font-weight: 700;
+                                        display: block;
+                                        margin: auto;
+                                        max-width: 100%;
+                                        & dt{
+                                            display: inline-block;
+                                            &::after{
+                                                content: ":";
+                                                padding: 0 5px;
+                                            }
+                                        }
+                                        & dd{
+                                            display: inline-block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes imageSetIn {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+    1% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    60% {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+}
 /* ------------------------------CONTENT END */
