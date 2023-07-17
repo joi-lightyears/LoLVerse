@@ -1120,7 +1120,7 @@ header{
                 & .contentItemWrap{
                     overflow: hidden;
                     & .itemBgContainer{
-                        background-image: url(../assets/img/rammus.jp);
+                        /* background-image: url(../assets/img/rammus.jp); */
                         background-position: 64.1152% 29.1492%;
                         opacity: 1;
                         -webkit-animation: imageSetIn .8s;
