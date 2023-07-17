@@ -304,7 +304,7 @@
     & .minHeight{
         min-height: 500px;
         & .bannerBackground{
-            background-image: url(../assets/img/naafiri.jpg);
+            
             background-position: 32.2917% 50.9259%;
             opacity: 1;
             top: 40px;
@@ -968,7 +968,6 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     transition: opacity .4s ease;
-                    background-image: url(../assets/img/naafiri.jpg);
                     background-position: 32.2917% 50.9259%;
                     background-size: 350%;
                     opacity: 1;
