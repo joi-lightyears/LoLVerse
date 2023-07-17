@@ -1443,3 +1443,35 @@ header{
     }
 }
 /* ------------------------------CONTENT END */
+
+/* ------------------------------FOOTER BEGIN */
+.footer_lolverse{
+    position: relative;
+    margin-top: 10%;
+    background-color: #111111;
+    border-top: 2px #2e3338 solid;
+    color: #737373;
+    height: 200px;
+    text-align: center;
+    background: linear-gradient(to bottom, #141412b9 50%, #111111 100%);
+    & h1{
+        display: inline-block;
+        margin: 30px;
+        cursor: pointer;
+        color: #ffffff;
+        &:hover{
+            color: #ffffff;
+        }
+    }
+    & i{
+        margin: 0 20px;
+        margin-top: 40px;
+        display: inline-block;
+        cursor: pointer;
+        color: #737373;
+        &:hover{
+            color: rgb(11, 196, 226);
+        }
+    } 
+} 
+/* ------------------------------FOOTER END */
