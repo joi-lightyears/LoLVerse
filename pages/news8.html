@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL - Đăng ký</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/mail.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- CSS -->
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="../styles/home.css"> -->
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+<body>
+    <div class="formContainer">
+        <div class="formWrapper">
+            <span class="formTitle">Đăng ký</span>
+            <form onsubmit="validateForm(event)" action="">
+                <div class="field">
+                    <label for="mssv" class="title">Mã số sinh viên</label>
+                    <input id="mssv" type="text" name="mssv" >
+                </div>
+                <div class="field">
+                    <label for="hoVaTen" class="title">Họ và Tên</label>
+                    <input id="hoVaTen" type="text" name="hoVaTen" >
+                </div>
+                <div class="field">
+                    <label for="email" class="title">Email</label>
+                    <input id="email" type="text" name="email" >
+                </div>
+                <div>
+
+                    <span class="title">Giới tính</span>
+                    <div id="sex" class="sex">
+                        <div class="checkbox-wrapper-12">
+                            <div class="cbx">
+                              <input id="cbx-12" type="checkbox">
+                              <label for="cbx-12"></label>
+                              <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                <path d="M2 8.36364L6.23077 12L13 2"></path>
+                              </svg>
+                            </div>
+                            <label for="cbx-12" class="cbx-label-12">Nam</label>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                <filter id="goo-12">
+                                  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+                                  <feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+                                </filter>
+                              </defs>
+                            </svg>
+                        </div>
+
+                        <div class="checkbox-wrapper-12">
+                            <div class="cbx">
+                              <input id="cbx-13" type="checkbox">
+                              <label for="cbx-13"></label>
+                              <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                <path d="M2 8.36364L6.23077 12L13 2"></path>
+                              </svg>
+                            </div>
+                            <label for="cbx-13" class="cbx-label-12">Nữ</label>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                <filter id="goo-12">
+                                  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+                                  <feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+                                </filter>
+                              </defs>
+                            </svg>
+                        </div>
+                        <!-- <input id="male" type="radio" name="sex" >
+                        <label for="male">Nam</label>
+                        <input id="female" type="radio" name="sex" >
+                        <label for="female">Nữ</label> -->
+                    </div>
+                </div>
+                <div>
+                    <span class="title">Sở thích</span>
+                    <div id="hobby" class="hobby">
+                        <div class="checkbox-wrapper-12">
+                            <div class="cbx">
+                              <input name="hobby" id="rd" type="checkbox">
+                              <label for="rd"></label>
+                              <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                <path d="M2 8.36364L6.23077 12L13 2"></path>
+                              </svg>
+                            </div>
+                            <label for="rd" class="cbx-label-12">Đọc sách</label>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                <filter id="goo-12">
+                                  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+                                  <feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+                                </filter>
+                              </defs>
+                            </svg>
+                        </div>
+                        <div class="checkbox-wrapper-12">
+                            <div class="cbx">
+                              <input name="hobby" id="travel" type="checkbox">
+                              <label for="travel"></label>
+                              <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                <path d="M2 8.36364L6.23077 12L13 2"></path>
+                              </svg>
+                            </div>
+                            <label for="travel" class="cbx-label-12">Du lịch</label>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                <filter id="goo-12">
+                                  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+                                  <feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+                                </filter>
+                              </defs>
+                            </svg>
+                        </div>
+                        <div class="checkbox-wrapper-12">
+                            <div class="cbx">
+                              <input name="hobby" id="music" type="checkbox">
+                              <label for="music"></label>
+                              <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                <path d="M2 8.36364L6.23077 12L13 2"></path>
+                              </svg>
+                            </div>
+                            <label for="music" class="cbx-label-12">Âm nhạc</label>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                <filter id="goo-12">
+                                  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+                                  <feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+                                </filter>
+                              </defs>
+                            </svg>
+                        </div>
+                        <div class="checkbox-wrapper-12">
+                            <div class="cbx">
+                              <input name="hobby" id="cuisine" type="checkbox">
+                              <label for="cuisine"></label>
+                              <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                <path d="M2 8.36364L6.23077 12L13 2"></path>
+                              </svg>
+                            </div>
+                            <label for="cuisine" class="cbx-label-12">Ẩm thực</label>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                <filter id="goo-12">
+                                  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+                                  <feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+                                </filter>
+                              </defs>
+                            </svg>
+                        </div>
+                        <div class="checkbox-wrapper-12">
+                            <div class="cbx">
+                              <input name="hobby" id="etc" type="checkbox">
+                              <label for="etc"></label>
+                              <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                <path d="M2 8.36364L6.23077 12L13 2"></path>
+                              </svg>
+                            </div>
+                            <label for="etc" class="cbx-label-12">Khác</label>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                              <defs>
+                                <filter id="goo-12">
+                                  <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur"></feGaussianBlur>
+                                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></feColorMatrix>
+                                  <feBlend in="SourceGraphic" in2="goo-12"></feBlend>
+                                </filter>
+                              </defs>
+                            </svg>
+                        </div>
+                        <!-- <label for="rd">Đọc sách</label>
+                        <input type="checkbox" id="rd" >
+                        <label for="travel">Du lịch</label>
+                        <input type="checkbox" id="travel" >
+                        <label for="music">Âm nhạc</label>
+                        <input type="checkbox" id="music" >
+                        <label for="cuisine">Ẩm thực</label>
+                        <input type="checkbox" id="cuisine">
+                        <label for="etc">Khác</label>
+                        <input type="checkbox" id="etc" > -->
+                    </div>
+
+                </div>
+                <div >
+                    <span class="title">Quốc tịch</span>
+                    <div id="national" class="nationaly">
+                        <select name="" id="nationaly">
+                            <option value="Chọn quốc tịch">Chọn quốc tịch</option>
+                            <option name="national" value="Việt Nam">Việt Nam</option>
+                            <option name="national" value="Đông Lào">Canada</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <span>Ghi chú</span>
+                    <div class="note">
+                        <textarea name="note" id="nt" cols="10" rows="5" oninput="limitText(this, 199)"></textarea>
+                    </div>
+                </div>
+
+                <button>Đăng ký</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/validateForm.js"></script>
+</body>
+</html>
