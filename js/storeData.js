@@ -247,8 +247,17 @@ selectBox.addEventListener("change", function () {
         });
 
 
+        // disable focus when enter
+        quantity.addEventListener("keydown", function (e) {
+            if (e.key == "Enter") {
+                e.preventDefault();
+                this.blur();
+                console.log(0)
+            }
+        });
 
         quantity.addEventListener("input", function () {
+
             var quantity = this.innerHTML;
             var id = this.id.split("-")[1];
             var champPrice = document.getElementById("champ-" + id + "-price");
