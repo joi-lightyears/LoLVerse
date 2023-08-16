@@ -4,7 +4,7 @@ const sliderData = [
         id: 1,
         title: "Nữ chúa hư không",
         name: "Bel'Veth",
-        desc: "Lorem ipsum",
+        desc: "Thế giới này sẽ không bị lãng quên.",
         image: "../assets/img/belveth-splash.jpg"
     },
     {
@@ -12,7 +12,7 @@ const sliderData = [
         title: "NỮ HOÀNG NHỀN NHỆN",
         name: "ELISE",
         desc: "Only the spider is safe in her web",
-        image: "../assets/img/elise.jpg"
+        image: "../assets/img/Elise.jpg"
     },
     {
         id: 3,
@@ -25,120 +25,120 @@ const sliderData = [
         id: 4,
         title: "Captain Teemo on duty",
         name: "Teemo",
-        desc: "Lorem ipsum",
-        image: "../assets/img/belveth-splash.jpg"
+        desc: "Never underestimate the power of the Scouts code.",
+        image: "../assets/img/Teemo_0.jpg"
     },
     {
         id: 5,
         title: "KẺ BẤT DUNG THỨ",
         name: "Yasuo",
         desc: "Death is like the wind; always by my side.",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/varus-splash.jpg"
     },
     {
         id: 6,
         title: "KẺ LƯU ĐÀY",
         name: "Riven",
         desc: "What is broken can be reforged!",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/RekSai_0.jpg"
     },
     {
         id: 7,
         title: "NỮ THỢ SĂN HÓA THÚ",
         name: "NIDALEE",
         desc: "They will fear the wild",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/MasterYi_0.jpg"
     },
     {
         id: 8,
         title: "KẺ LỪA ĐẢO",
         name: "LEBLANC",
         desc: "For my next trick I'll make their life bar disappear",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/Leblanc_0.jpg"
     },
     {
         id: 9,
         title: "THẦN CHẾT ĐỎ",
         name: "VLADIMIR",
         desc: "Go ahead, be negative. You'll be just my type",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/MissFortune_0.jpg"
     },
     {
         id: 10,
         title: "TỬ THẦN BÓNG TỐI",
         name: "KAYN",
         desc: "Those who seek balance find only death",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/KogMaw_0.jpg"
     },
     {
         id: 11,
         title: "MŨI TÊN BÁO THÙ",
         name: "VARUS",
         desc: "Beware a man with nothing to lose",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/Kayn.jpg"
     },
     {
         id: 12,
         title: "THÚ SĂN MỒI KIÊU HÃNH",
         name: "RENGAR",
         desc: "There is the hunter and the hunted",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/milio-splash.jpg"
     },
     {
         id: 13,
         title: "SÁT THỦ HƯ KHÔNG",
         name: "KHA'ZIX",
         desc: "To truly know someone, eat them and walk a mile in their feet",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/MonkeyKing_0.jpg"
     },
     {
         id: 14,
         title: "Embracing life means accepting death",
         name: "KINDRED",
         desc: "THỢ SĂN VĨNH HẰNG",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/Nami.jpg"
     },
     {
         id: 15,
         title: "TIẾNG RU TỬ THẦN",
         name: "KARTHUS",
         desc: "Death is a song all will hear",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/Morgana.jpg"
     },
     {
         id: 16,
         title: "CAI NGỤC XIỀNG XÍCH",
         name: "THRESH",
         desc: "There is life. There is death. And then there is me",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/Nocturne_0.jpg"
     },
     {
         id: 17,
         title: "BÓNG MA CHIẾN TRANH",
         name: "HECARIM",
         desc: "Your life is a burden. I bring you freedom!",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/nilah-splash.jpg"
     },
     {
         id: 18,
         title: "MŨI GIÁO PHỤC HẬN",
         name: "KALISTA",
         desc: "Our fates are intertwined",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/naafiri.jpg"
     },
     {
         id: 19,
         title: "HOÀNG ĐẾ SA MẠC",
         name: "AZIR",
         desc: "What is the desert, but the ashes of my enemies?",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/Elise.jpg"
     },
     {
         id: 20,
         title: "NHÀ THÔNG THÁI SA MẠC",
         name: "NASUS",
         desc: "The cycle of life and death continues. We will live, they will die.",
-        image: "../assets/img/belveth-splash.jpg"
+        image: "../assets/img/Bard_0.jpg"
     }
 ]
 const carousel = document.querySelector(".carousel");
@@ -169,10 +169,8 @@ const loadSliderData = async () => {
         `;
         carousel.appendChild(liTag);
     });
-
     // console.log(sliderDataHtml)
     // carousel.innerHTML = sliderDataHtml.join("");
-
 }
 loadSliderData()
     

@@ -87,7 +87,7 @@ selectBox.addEventListener("change", function () {
     <th>Hàng hóa</th>
     <th>Đơn giá</th>
     <th>Số lượng</th>
-    <th>Thành tiền</th>
+    <th class="eachPrice">Thành tiền</th>
     `;
     table.appendChild(headerTable);
 
@@ -180,6 +180,7 @@ selectBox.addEventListener("change", function () {
     table.appendChild(tableFooter);
     // allow contenteditable when tick on checkbox
     var checkBoxes = document.querySelectorAll("input[name=tickChamp]");
+    console.log(checkBoxes);
     // var quantities = document.querySelectorAll("td[id^=quantity]");
     checkBoxes[0].addEventListener("click", function () {
         if (this.checked) {
@@ -235,7 +236,7 @@ selectBox.addEventListener("change", function () {
                 console.log(total);
                 for (var i = 1; i < checkBoxes.length; i++) {
                     // just sum checked
-                    if (checkBoxes[i].checked) {
+                    if (checkBoxes[i].checked && eachPrices[i].innerHTML != "") {
                         total += parseInt(eachPrices[i].innerHTML);
                     }
                 }
@@ -255,10 +256,11 @@ selectBox.addEventListener("change", function () {
             var totalPrice = document.querySelector(".totalPrice");
             var eachPrices = document.querySelectorAll(".eachPrice");
             var total = 0;
-            for (var i = 1; i < eachPrices.length; i++) {
+            for (var j = 1; j < eachPrices.length; j++) {
                 // just sum checked
-                if (checkBoxes[i + 1].checked) {
-                    total += parseInt(eachPrices[i].innerHTML);
+                if (checkBoxes[j].checked && eachPrices[j].innerHTML != "") {
+                    total += parseInt(eachPrices[j].innerHTML);
+                    console.log(parseInt(eachPrices[j].innerHTML))
                 }
             }
             totalPrice.innerHTML = total;
