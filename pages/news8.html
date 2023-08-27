@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>LoL - Đăng ký</title>
 
     <!-- favicon -->
@@ -23,11 +23,7 @@
     <div class="formContainer">
         <div class="formWrapper">
             <span class="formTitle">Đăng ký</span>
-            <form onsubmit="validateForm(event)" action="">
-                <div class="field">
-                    <label for="mssv" class="title">Mã số sinh viên</label>
-                    <input id="mssv" type="text" name="mssv" >
-                </div>
+            <form onsubmit="validateForm(event)" >
                 <div class="field">
                     <label for="hoVaTen" class="title">Họ và Tên</label>
                     <input id="hoVaTen" type="text" name="hoVaTen" >
@@ -42,7 +38,7 @@
                     <div id="sex" class="sex">
                         <div class="checkbox-wrapper-12">
                             <div class="cbx">
-                              <input id="cbx-12" type="checkbox">
+                              <input id="cbx-12" type="checkbox" name="gioiTinh[]" value="Nam">
                               <label for="cbx-12"></label>
                               <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
                                 <path d="M2 8.36364L6.23077 12L13 2"></path>
@@ -62,7 +58,7 @@
 
                         <div class="checkbox-wrapper-12">
                             <div class="cbx">
-                              <input id="cbx-13" type="checkbox">
+                              <input id="cbx-13" type="checkbox" name="gioiTinh[]" value="Nữ">
                               <label for="cbx-13"></label>
                               <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
                                 <path d="M2 8.36364L6.23077 12L13 2"></path>
@@ -90,7 +86,7 @@
                     <div id="hobby" class="hobby">
                         <div class="checkbox-wrapper-12">
                             <div class="cbx">
-                              <input name="hobby" id="rd" type="checkbox">
+                              <input id="rd" type="checkbox" name="hobby[]" value="Đọc sách">
                               <label for="rd"></label>
                               <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
                                 <path d="M2 8.36364L6.23077 12L13 2"></path>
@@ -109,7 +105,7 @@
                         </div>
                         <div class="checkbox-wrapper-12">
                             <div class="cbx">
-                              <input name="hobby" id="travel" type="checkbox">
+                              <input id="travel" type="checkbox" name="hobby[]" value="Du lịch">
                               <label for="travel"></label>
                               <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
                                 <path d="M2 8.36364L6.23077 12L13 2"></path>
@@ -128,7 +124,7 @@
                         </div>
                         <div class="checkbox-wrapper-12">
                             <div class="cbx">
-                              <input name="hobby" id="music" type="checkbox">
+                              <input id="music" type="checkbox" name="hobby[]" value="Âm nhạc">
                               <label for="music"></label>
                               <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
                                 <path d="M2 8.36364L6.23077 12L13 2"></path>
@@ -147,7 +143,7 @@
                         </div>
                         <div class="checkbox-wrapper-12">
                             <div class="cbx">
-                              <input name="hobby" id="cuisine" type="checkbox">
+                              <input id="cuisine" type="checkbox" name="hobby[]" value="Ẩm thực">
                               <label for="cuisine"></label>
                               <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
                                 <path d="M2 8.36364L6.23077 12L13 2"></path>
@@ -166,7 +162,7 @@
                         </div>
                         <div class="checkbox-wrapper-12">
                             <div class="cbx">
-                              <input name="hobby" id="etc" type="checkbox">
+                              <input id="etc" type="checkbox" name="hobby[]" value="Khác">
                               <label for="etc"></label>
                               <svg width="15" height="14" viewBox="0 0 15 14" fill="none">
                                 <path d="M2 8.36364L6.23077 12L13 2"></path>
@@ -199,7 +195,7 @@
                 <div >
                     <span class="title">Quốc tịch</span>
                     <div id="national" class="nationaly">
-                        <select name="" id="nationaly">
+                        <select name="nationaly" id="nationaly">
                             <option value="Chọn quốc tịch">Chọn quốc tịch</option>
                             <option name="national" value="Việt Nam">Việt Nam</option>
                             <option name="national" value="Đông Lào">Canada</option>

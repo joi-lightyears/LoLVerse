@@ -19,19 +19,21 @@ function limitText(element, maxLength) {
         element.value = element.value.slice(0, maxLength);
     }
 }
-
+function showAlert(message) {
+    alert(message);
+}
 
 const validateForm = (e) => {
     e.preventDefault();
-    // Kiểm tra mssv
-    var mssv = document.getElementById("mssv");
-    if (mssv.value === "") {
-        // add class error
-        mssv.classList.add("error");
-        return false;
-    }else{
-        mssv.classList.remove("error");
-    }
+    // // Kiểm tra mssv
+    // var mssv = document.getElementById("mssv");
+    // if (mssv.value === "") {
+    //     // add class error
+    //     mssv.classList.add("error");
+    //     return false;
+    // }else{
+    //     mssv.classList.remove("error");
+    // }
     // Kiểm tra họ tên
     var name = document.getElementById("hoVaTen");
     if (name.value === "") {
@@ -70,7 +72,7 @@ const validateForm = (e) => {
         sexContainer.classList.remove("error");
     }
     // kiểm tra sở thích đã tích ít nhất 1 ô chưa
-    var hobbies = document.getElementsByName("hobby");
+    var hobbies = document.getElementsByName("hobby[]");
     var hobbyContainer = document.getElementById("hobby");
     var isChecked = false;
     for (var i = 0; i < hobbies.length; i++) {
@@ -95,6 +97,29 @@ const validateForm = (e) => {
     }else{
         nationalContainer.classList.remove("error");
     }
-    
 
+    sendDataToPHP()
+    
+    function sendDataToPHP() {
+        const formData = new FormData(document.querySelector('form'));
+    
+        fetch('../php/signup.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(data => {
+            // Xử lý phản hồi từ PHP (nếu cần)
+            // console.log(data);
+            if (data == "Email đã tồn tại!")
+            {
+                showAlert(data);
+            }else{
+                showAlert("Đăng ký thành công!");
+            }
+        })
+        .catch(error => {
+            console.error('Lỗi:', error);
+        });
+    }
 }
